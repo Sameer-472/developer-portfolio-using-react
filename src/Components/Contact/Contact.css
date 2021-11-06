@@ -1,0 +1,27 @@
+.reach-out {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.mydp {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid blueviolet;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .mydp {
+        margin-left: 20%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .contact {
+        text-align: center;
+    }
+}
