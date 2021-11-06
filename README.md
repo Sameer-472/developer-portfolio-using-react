@@ -8,7 +8,7 @@ Technology used in this project are <br>
 🟨 Illustration  <br>
 
 Demo link of this portfolio 👇👇👇👇 <br>
-deafening-need.surge.sh
+https://deafening-need.surge.sh/
 
 
 
