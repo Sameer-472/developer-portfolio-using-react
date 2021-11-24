@@ -28,14 +28,20 @@ const projectData = {
     {
       name: "Shoe Store",
       details: "You can enjoy purchase shoes with out reloading the page",
-      demo: "https://github.com/Sameer-472/Shoes-store",
-      code: "http://brash-cannon.surge.sh/",
+      demo: "http://brash-cannon.surge.sh/",
+      code: "https://github.com/Sameer-472/Shoes-store",
     },
     {
       name: "Alice and racing queen",
       details: "made this running app with the help Web animation API in react",
-      demo: "https://github.com/Sameer-472/Alice-and-the-red-queen",
-      code: "https://best-letter.surge.sh/",
+      demo: "https://best-letter.surge.sh/",
+      code: "https://github.com/Sameer-472/Alice-and-the-red-queen",
+    },
+    {
+      name: "React Quiz App",
+      details: "made this Quiz app with React and Typscript",
+      demo: "https://wary-airplane.surge.sh/",
+      code: "https://github.com/Sameer-472/Quiz-app-",
     },
   ],
 };
