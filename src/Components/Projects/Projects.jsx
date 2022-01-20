@@ -14,10 +14,10 @@ import "./Projects.css";
 const projectData = {
   projectList: [
     {
-      name: "Expense Tracker App",
+      name: "Expense Tracker App with PWA",
       details: "In this is web app you can manage and track all your expenses",
-      demo: "http://onerous-transport.surge.sh/",
-      code: "https://github.com/Sameer-472/Expense-Tracker",
+      demo: "https://lonely-bedroom.surge.sh/",
+      code: "https://github.com/Sameer-472/expense-tracker-rebuild",
     },
     {
       name: "Covid-19 Tracker",
