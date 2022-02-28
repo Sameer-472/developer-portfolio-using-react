@@ -18,37 +18,48 @@ const projectData = {
       details: "In this is web app you can manage and track all your expenses",
       demo: "https://lonely-bedroom.surge.sh/",
       code: "https://github.com/Sameer-472/expense-tracker-rebuild",
+      tech: "Javascript"
     },
     {
       name: "Covid-19 Tracker",
       details: "You can track the information about covid-19 globally ",
       demo: "https://sudden-zebra.surge.sh/",
       code: "https://github.com/Sameer-472/Covid-19-tracker",
+      tech: "Javascript"
     },
     {
       name: "Shoe Store",
       details: "You can enjoy purchase shoes with out reloading the page",
       demo: "http://brash-cannon.surge.sh/",
       code: "https://github.com/Sameer-472/Shoes-store",
+      tech: "Javascript"
     },
     {
       name: "Alice and racing queen",
       details: "made this running app with the help Web animation API in react",
       demo: "https://best-letter.surge.sh/",
       code: "https://github.com/Sameer-472/Alice-and-the-red-queen",
+      tech: "Javascript"
     },
     {
       name: "React Quiz App",
       details: "made this Quiz app with React and Typscript",
       demo: "https://wary-airplane.surge.sh/",
       code: "https://github.com/Sameer-472/Quiz-app-",
+      tech: "Javascript"
+    },{
+      name: "Web3.0 Ethereum transfer app",
+      details: "made this Quiz app with React and Solidity",
+      demo: "https://etherblockchain.netlify.app/",
+      code: "https://github.com/Sameer-472/Web-3.0-blockchain-project",
+      tech: "Solidity"
     },
   ],
 };
 
 const { projectList } = projectData;
 
-projectList.map(({ name, details, demo, code }) => {
+projectList.map(({ name, details, demo, code , tech }) => {
   console.log(name);
 });
 
@@ -76,7 +87,7 @@ export const Projects = () => {
             alignItems="center"
             item
           >
-            {projectList.map(({ name, details, demo, code }) => {
+            {projectList.map(({ name, details, demo, code , tech }) => {
               return (
                 <>
                   <Grid
@@ -100,7 +111,7 @@ export const Projects = () => {
                             <br />
                           </Typography>
                           <CardActions>
-                            <p>🟡 Javascript</p>
+                            <p>🟡 <b>{tech}</b></p>
                           </CardActions>
                           <a href={demo}>
 
