@@ -35,20 +35,20 @@ export const Contact = () => {
             <h3>Open for work: Yes</h3>
             <div className="Icons">
               <a href="https://github.com/Sameer-472">
-                <GitHubIcon id="github" />
+                <GitHubIcon id="github" className="social-media-icons" />
               </a>
               <a href="https://www.instagram.com/skywalker_sameer/">
                 {" "}
-                <InstagramIcon id="instagram" />
+                <InstagramIcon id="instagram" className="social-media-icons" />
               </a>
               <a href="https://www.facebook.com/profile.php?id=100009529212122">
-                <FacebookIcon id="facebook" />
+                <FacebookIcon id="facebook" className="social-media-icons" />
               </a>
               <a href="https://twitter.com/Sameerkhan_45">
-                <TwitterIcon id="twitter" />
+                <TwitterIcon id="twitter" className="social-media-icons" />
               </a>
               <a href="https://www.linkedin.com/in/muhammad-sameer-27ba2a172/">
-                <LinkedInIcon id="linkedin" />
+                <LinkedInIcon id="linkedin" className="social-media-icons" />
               </a>
             </div>
           </Grid>

@@ -44,11 +44,11 @@ const Header = () => {
                   <img src="../../Images/flag.png" alt="" id="flag" /> 
                    doing Bachelor of Science in Information technology having an experience of building Web  applications with JavaScript / Reactjs / Material UI and some other cool libraries and frameworks🚀
                   <div className="Icons">
-                    <a href="https://github.com/Sameer-472"><GitHubIcon id="github" /></a>
-                    <a href="https://www.instagram.com/skywalker_sameer/"> <InstagramIcon id="instagram" /></a>
-                    <a href="https://www.facebook.com/profile.php?id=100009529212122"><FacebookIcon id="facebook" /></a>
-                    <a href="https://twitter.com/Sameerkhan_45"><TwitterIcon id="twitter" /></a>
-                    <a href="https://www.linkedin.com/in/muhammad-sameer-27ba2a172/"><LinkedInIcon id="linkedin" /></a>
+                    <a href="https://github.com/Sameer-472"><GitHubIcon id="github" className="social-media-icons" /></a>
+                    <a href="https://www.instagram.com/skywalker_sameer/"> <InstagramIcon id="instagram" className="social-media-icons" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009529212122"><FacebookIcon id="facebook" className="social-media-icons" /></a>
+                    <a href="https://twitter.com/Sameerkhan_45"><TwitterIcon id="twitter" className="social-media-icons" /></a>
+                    <a href="https://www.linkedin.com/in/muhammad-sameer-27ba2a172/"><LinkedInIcon id="linkedin" className="social-media-icons" /></a>
                   </div>
                   <div className="btn">
                     <button className="mybtn" onClick={scrollToContact} duration={50} smooth={false}>Contact Me</button>
