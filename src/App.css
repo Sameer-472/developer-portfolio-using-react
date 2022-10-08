@@ -23,6 +23,10 @@
     color: black;
 }
 
+.darkMode a .social-media-icons {
+    color: white;
+}
+
 .lightMode .projectCard {
     box-shadow: 5px 5px 30px black;
     /* background-color: blueviolet; */

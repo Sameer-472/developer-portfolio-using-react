@@ -63,19 +63,3 @@ header {
     color: purple;
     border: 3px solid purple;
 }
-
-#facebook {
-    color: blue;
-}
-
-#twitter {
-    color: rgba(69, 69, 251, 0.904);
-}
-
-#instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-
-#linkedin {
-    color: blue;
-}
