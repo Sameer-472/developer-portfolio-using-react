@@ -29,14 +29,14 @@ export const Education = () => {
                 <b>Goverment College University</b>
               </h2>
               <h3>Intermediate in Pre-Engineering</h3>
-              <h4>January 2015 - December 2017</h4>
+              <h5>January 2015 - December 2017</h5>
               <div id="divider"></div>
               <img className="uniLogo" src="../../Images/sindh.png" alt="" />
               <h2>
                 <b>University of Sindh</b>
               </h2>
               <h3>Bachelor of science in Inforamtion technology</h3>
-              <h4>January 2019 - Expected 2022</h4>
+              <h5>January 2019 - Expected 2022</h5>
               <div id="divider"></div>
             </Grid>
           </Grid>
