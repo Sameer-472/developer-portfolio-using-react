@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+* {
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+    transition: all linear 0.1s;
+}
+
+.darkMode {
+    background-color: #171c28;
+    color: white;
+}
+
+.lightMode {
+    background-color: #fff;
+    color: black;
+}
+
+.darkMode a {
+    color: white;
+}
+
+.lightMode a {
+    color: black;
+}
+
+.darkMode a .social-media-icons {
+    color: white;
+}
+
+.lightMode .projectCard {
+    box-shadow: 5px 5px 30px black;
+    /* background-color: blueviolet; */
+    /* background-color: #171c28; */
+    margin-top: 50px;
+}
+
+.darkMode .projectCard {
+    box-shadow: 5px 5px 30px whitesmoke;
+    /* background-color: blueviolet; */
+    background-color: #171c28;
+    color: whitesmoke;
+    margin-top: 50px;
+}

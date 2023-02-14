@@ -1,0 +1,106 @@
+    .desktopNav {
+        display: block;
+        display: flex;
+        align-items: center;
+        /* position: fixed;
+        z-index: 1;
+        top: 0%; */
+    }
+    
+    .signature {
+        height: 30px;
+        margin: 0 20vw 0 20px;
+    }
+    
+    .mobsignature {
+        height: 30px;
+        margin: 0 20vw 0 20px;
+        display: none;
+    }
+    
+    ul li {
+        list-style-type: none;
+        margin: 0px 10px 10px 0;
+        transition: linear all 0.3s;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    ul li:hover {
+        color: blueviolet;
+        border-radius: 10%;
+        cursor: pointer;
+    }
+    
+    .mobileNav {
+        display: none;
+    }
+    
+    .button {
+        display: none;
+    }
+    
+    .notcross {
+        display: none;
+    }
+    
+    nav {
+        margin: 0;
+        padding: 0%;
+    }
+    
+    .header {
+        display: none;
+    }
+    
+    @media screen and (max-width:800px) {
+        .desktopNav {
+            display: none;
+        }
+        .signature {
+            height: 50px;
+            margin: 0 20vw 0 20px;
+        }
+        .mobileNav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li {
+            transition: linear all 1s;
+            margin-right: 35px;
+        }
+        li {
+            display: block;
+        }
+        ul li:hover {
+            cursor: pointer;
+        }
+        #button {
+            display: none;
+            transition: all linear 3s;
+        }
+        #notcross {
+            transition: all linear 3s;
+            display: none;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .signature {
+            display: none;
+        }
+        .mobsignature {
+            height: 30px;
+            margin: 0 20vw 0 20px;
+            display: block;
+        }
+    }
