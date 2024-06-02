@@ -5,3 +5,36 @@
 .uniLogo {
     width: 80px;
 }
+
+#tCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #24323e;
+    color: white;
+    border-radius: 10px;
+    width: 18vw;
+    height: 25vh;
+}
+
+#selections div{
+    margin-top: 10px;
+}
+
+.option:hover{
+    cursor: pointer;
+}
+
+#technolgiesCards{
+    display: grid;
+    grid: row;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.active {
+    color: blueviolet;
+}

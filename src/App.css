@@ -1,4 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 * {
     margin: 0%;
     font-family: 'Raleway', sans-serif;
@@ -6,12 +11,15 @@
 }
 
 .darkMode {
-    background-color: #171c28;
+    /* background-color: #171c28; */
+    background-image: url("../public/Images/dark-bg.png");
     color: white;
 }
 
 .lightMode {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: url("../public/Images/light-bg.png");
+    /* background: ; */
     color: black;
 }
 
