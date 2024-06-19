@@ -10,6 +10,7 @@ import { Contact } from "./Components/Contact/Contact";
 import "./index.css";
 import { ThemeContext } from "./ThemeProvider";
 import { useContext } from "react";
+import { Experience } from "./Components/Experience/Experience";
 
 function App() {
     // this function will retrieve data from the nav dark toggle button and change the color 
@@ -28,8 +29,9 @@ function App() {
                 <Nav parent={callBackFunction} />
                 <Header />
                 <Skills />
-                <Education />
+                <Experience/>
                 <Projects />
+                <Education />
                 <Contact />
                 <Switch>
                     <Route path="/home" exact element={<Header />} />

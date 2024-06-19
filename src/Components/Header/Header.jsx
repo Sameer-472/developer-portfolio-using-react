@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       {/* <h1>aksjfhoqwi</h1> */}
-      <header className="mt-10">
+      <div className="mt-10">
         <Box sx={{ flexGrow: 1 }} class="flex" className="intro"
           data-aos="fade-up"
           data-aos-delay="0"
@@ -61,7 +61,7 @@ const Header = () => {
             </Grid>
           </Grid>
         </Box>
-      </header>
+      </div>
     </>
   );
 };

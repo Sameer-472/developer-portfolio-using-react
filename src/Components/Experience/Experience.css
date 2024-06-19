@@ -1,0 +1,16 @@
+.global-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#divider {
+    height: 3px;
+    /* width: 70vw; */
+    background-color: blueviolet;
+    margin-bottom: 30px;
+}
+
+.uniLogo {
+    width: 50px;
+}

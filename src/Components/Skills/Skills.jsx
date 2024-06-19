@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './Skills.css'
 import { ThemeContext } from "../../ThemeProvider";
+import nextJs from "../../Assets/next.png"
 
 const Skills = () => {
   const [state, setstate] = useState("frontend");
@@ -12,80 +13,87 @@ const Skills = () => {
   const frontEnd = [
     {
       image:
-        "https://www.halo-lab.com/images/services/services-icons/react-js.svg",
+        "https://img.icons8.com/officel/50/000000/react.png",
       name: "React",
     },
     {
       image:
-        "https://www.halo-lab.com/images/services/services-icons/next-js.svg",
+        "	https://img.icons8.com/color/50/000000/javascript--v1.png",
+      name: "Javascript",
+    },
+    {
+      image:
+        "https://img.icons8.com/color/50/000000/css3.png",
+      name: "CSS",
+    },
+    {
+      image:
+        "	https://img.icons8.com/color/50/000000/html-5.png",
+      name: "HTML5",
+    },
+    {
+      image:
+        "https://img.icons8.com/color/48/000000/npm.png",
+      name: "NPM",
+    },
+    {
+      image:
+        "https://img.icons8.com/color/50/000000/material-ui.png",
+      name: "Material UI",
+    },
+    {
+      image: nextJs,
       name: "Next.js",
     },
     {
       image:
-        "https://www.halo-lab.com/images/services/services-icons/gatsby.svg",
-      name: "Gatsby.js",
-    },
-    {
-      image:
-        "https://www.halo-lab.com/images/services/services-icons/redux.svg",
+        "https://img.icons8.com/color/48/null/redux.png",
       name: "Redux",
-    },
-    {
-      image: "https://www.halo-lab.com/images/services/services-icons/mobx.svg",
-      name: "MobX",
-    },
-    {
-      image:
-        "https://www.halo-lab.com/images/services/services-icons/webpack.svg",
-      name: "Webpack",
-    },
-    {
-      image:
-        "https://www.halo-lab.com/images/services/services-icons/graph-ql.svg",
-      name: "GraphQL",
     },
   ];
 
   const backEnd = [
     {
       image:
-        "	https://www.halo-lab.com/images/common/technologies/interpretators/node.svg",
+        "https://img.icons8.com/color/48/null/nodejs.png",
       name: "Node.js",
     },
     {
       image:
-        "https://www.halo-lab.com/images/services/services-icons/mongodb.svg",
+        "https://img.icons8.com/color/48/mongo-db.png",
       name: "MongoDB",
     },
     {
       image:
-        "https://www.halo-lab.com/images/services/services-icons/express.svg",
+        "https://img.icons8.com/ios/50/null/express-js.png",
       name: "Express",
-    },
-    {
-      image:
-        "https://www.halo-lab.com/images/services/services-icons/fastify.svg",
-      name: "Fastify",
     },
     {
       image: "https://www.halo-lab.com/images/services/services-icons/aws.svg",
       name: "AWS",
     },
+  ];
+
+  const blockChain = [
     {
       image:
-        "https://www.halo-lab.com/images/services/services-icons/nest-js.svg",
-      name: "Nest.js",
+        "https://img.icons8.com/color/48/null/solidity.png",
+      name: "Solidity",
     },
     {
       image:
-        "	https://www.halo-lab.com/images/services/services-icons/rabbit-mq.svg",
-      name: "RabbitMQ",
+        "https://63fc7c9577441906b1298d03--skywalkersameer.netlify.app/Images/hardhat.svg",
+      name: "Hardhat",
     },
     {
       image:
-        "https://www.halo-lab.com/images/services/services-icons/postgresql.svg",
-      name: "PostgreSQL",
+        "https://docs.ethers.org/v5/static/logo.svg",
+      name: "Ether.js",
     },
+    // {
+    //   image: "https://www.halo-lab.com/images/services/services-icons/aws.svg",
+    //   name: "AWS",
+    // },
   ];
 
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
@@ -97,7 +105,12 @@ const Skills = () => {
           {frontEnd.map((item) => {
             return (
               <>
-                <div id="" className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  dark:border-gray-700">
+                <div className={`max-w-lg p-6 w-[180px] bg-[#ffffff52] rounded-lg shadow-md flex justify-center flex-col items-center`}
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  data-aos-easing="ease-in-out-quart"
+                  data-aos-duration="500"
+                >
                   <img
                     src={item.image}
                     width={60}
@@ -108,10 +121,8 @@ const Skills = () => {
                     data-aos-duration="500"
                   />
                   <div
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-easing="ease-in-out-quart"
-                    data-aos-duration="500"
+
+                    className="font-semibold"
                   >
                     {item.name}
                   </div>
@@ -128,7 +139,11 @@ const Skills = () => {
           {backEnd.map((item) => {
             return (
               <>
-                <div id="" className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div id="" className="max-w-lg p-6 w-[180px] bg-[#ffffff52] rounded-lg shadow flex justify-center flex-col items-center"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  data-aos-easing="ease-in-out-quart"
+                  data-aos-duration="500">
                   <img
                     src={item.image}
                     width={60}
@@ -138,12 +153,7 @@ const Skills = () => {
                     data-aos-easing="ease-in-out-quart"
                     data-aos-duration="500"
                   />
-                  <div
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-easing="ease-in-out-quart"
-                    data-aos-duration="500"
-                  >
+                  <div>
                     {item.name}
                   </div>
                 </div>
@@ -155,10 +165,14 @@ const Skills = () => {
     } else {
       return (
         <>
-          {/* {CMS.map((item) => {
+          {blockChain.map((item) => {
             return (
               <>
-                <div id="tCard">
+                <div className="max-w-lg p-6 w-[180px] bg-[#ffffff52] rounded-lg shadow-md flex justify-center flex-col items-center"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  data-aos-easing="ease-in-out-quart"
+                  data-aos-duration="500">
                   <img
                     src={item.image}
                     width={60}
@@ -168,18 +182,13 @@ const Skills = () => {
                     data-aos-easing="ease-in-out-quart"
                     data-aos-duration="500"
                   />
-                  <div
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-easing="ease-in-out-quart"
-                    data-aos-duration="500"
-                  >
+                  <div>
                     {item.name}
                   </div>
                 </div>
               </>
             );
-          })} */}
+          })}
         </>
       );
     }
@@ -188,20 +197,21 @@ const Skills = () => {
   return (
     <>
       <div className="skills">
+        <div className="text-center mt-10 font-semibold ">Skills</div>
         <Box
           sx={{ flexGrow: 1 }}
           className="flex justify-center intro"
         // className="intro"
         >
-          <div id="technologies" style={{ marginTop: 50 }}>
+          <div id="technologies" >
             <div className="flex flex-row justify-center space-x-4 my-5">
-              <div className={`${isDarkMode ? "text-white": "text-black"} font-semibold option ${state == 'frontend' && "active"}`} onClick={() => setstate("frontend")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'frontend' && "active"} text-lg`} onClick={() => setstate("frontend")}>
                 Frontend
               </div>
-              <div className={`${isDarkMode ? "text-white": "text-black"} font-semibold option ${state == 'backend' && "active"}`} onClick={() => setstate("backend")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'backend' && "active"} text-lg`} onClick={() => setstate("backend")}>
                 Backend
               </div>
-              <div className={`${isDarkMode ? "text-white": "text-black"} font-semibold option ${state == 'blockchain' && "active"}`} onClick={() => setstate("blockchain")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'blockchain' && "active"} text-lg`} onClick={() => setstate("blockchain")}>
                 Blockchain
               </div>
             </div>
