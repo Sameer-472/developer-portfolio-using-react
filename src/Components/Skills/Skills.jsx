@@ -197,10 +197,10 @@ const Skills = () => {
   return (
     <>
       <div className="skills">
-        <div className="text-center mt-10 font-semibold ">Skills</div>
+        <div className="text-2xl my-5 font-semibold text-start">Tools and Technologies I know</div>
         <Box
           sx={{ flexGrow: 1 }}
-          className="flex justify-center intro"
+          className="flex justify-start intro"
         // className="intro"
         >
           <div id="technologies" >

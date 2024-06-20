@@ -24,14 +24,14 @@ function App() {
     
 
     return (
-        <div className={`${isDarkMode ? "darkMode" : "lightMode" } bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full`}>
+        <div className={`${isDarkMode ? "darkMode" : "lightMode" } bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full px-24`}>
             <Router>
                 <Nav parent={callBackFunction} />
                 <Header />
                 <Skills />
                 <Experience/>
                 <Projects />
-                <Education />
+                {/* <Education /> */}
                 <Contact />
                 <Switch>
                     <Route path="/home" exact element={<Header />} />

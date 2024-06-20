@@ -36,5 +36,23 @@
 }
 
 .active {
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: blueviolet;
+}
+.active:hover {
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(153, 64, 236);
+}
+
+.in-active{
     color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 5px;
 }

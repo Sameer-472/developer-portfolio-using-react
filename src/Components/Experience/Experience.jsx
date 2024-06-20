@@ -46,14 +46,14 @@ export const Experience = () => {
   ]
   return (
     <>
-      <div className="global-container">
+      <div className="">
         <Box sx={{ flexGrow: 1 }} class="flex">
           <Grid
             container
             spacing={1}
             // direction="column"
-            justifyContent="center"
-            alignItem="center"
+            justifyContent=""
+            alignItem=""
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-easing="ease"
@@ -61,8 +61,8 @@ export const Experience = () => {
             item
           >
 
-            <Grid xs={10} md={10} >
-              <div className="text-center font-semibold text-lg">My Work Experience</div>
+            <Grid xs={10} md={12} >
+              <div className="text-2xl my-5 font-semibold text-start">My Work Experience</div>
               {experienceArr?.map(({ img, companyName, designation, endDate, startDate, techStack }, index) => (
                 <div key={index}>
                   <div className="flex justify-between items-center">
