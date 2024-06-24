@@ -3,19 +3,13 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Projects.css";
+import "./Blogs.css";
 import { CardHeader, Tooltip } from "@mui/material";
 import { ThemeContext } from "../../ThemeProvider";
 // import Tooltip from '@mui/material/Tooltip';
 
 
-
-
-
-
-
-
-export const Projects = () => {
+export const Blogs = () => {
   const [state, setstate] = useState("frontend");
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
 
@@ -26,40 +20,20 @@ export const Projects = () => {
     reactProject: [
       {
         name: "Expense Tracker App with PWA",
-        details: "In this is web app you can manage and track all your expenses",
-        demo: "https://lonely-bedroom.surge.sh/",
+        img: "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fiuixn0s0spkymwse1y6r.png",
+        details: "In this article you will learn how you can upload files on IPFS using react",
+        demo: "https://dev.to/sameer472/how-to-upload-files-on-ipfs-infuraio-using-react-56g",
         code: "https://github.com/Sameer-472/expense-tracker-rebuild",
-        tech: ["Typescript", "React", "Styled Component", "Chakra UI", "Redux"]
-      },
-      // {
-      //   name: "Covid-19 Tracker",
-      //   details: "You can track the information about covid-19 globally ",
-      //   demo: "https://sudden-zebra.surge.sh/",
-      //   code: "https://github.com/Sameer-472/Covid-19-tracker",
-      //   tech: "Javascript"
-      // },
-      {
-        name: "Glitch AF",
-        details: "You can enjoy purchase shoes with out reloading the page",
-        demo: "https://glitch-h0pfcmrlz-sameer-472.vercel.app/",
-        code: "https://github.com/Sameer-472/Glitch",
-        tech: ["Javascript", "React", "Material UI", "Framer Motion", "Animate on Scroll"]
+        tech: ["Javascript", "React", "IPFS", "Infura.io", "web3"]
       },
       {
-        name: "Alice and racing queen",
-        details: "made this running app with the help Web animation API in react",
-        demo: "https://best-letter.surge.sh/",
-        code: "https://github.com/Sameer-472/Alice-and-the-red-queen",
-        tech: ["React", "CSS", "Styled Component", "", "Redux"]
+        name: "Expense Tracker App with PWA",
+        img: "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpk9yj1x2hii78j4c8vfh.jpg",
+        details: "Quick overview of layer 2 solutions in blockchain",
+        demo: "https://dev.to/sameer472/quick-guide-about-layer-2-scaling-solutions-5d9p",
+        code: "https://github.com/Sameer-472/expense-tracker-rebuild",
+        tech: ["Blockchain", "Research", "web3"]
       },
-      {
-        name: "React Quiz App",
-        details: "made this Quiz app with React and Typscript",
-        demo: "https://wary-airplane.surge.sh/",
-        code: "https://github.com/Sameer-472/Quiz-app-",
-        tech: ["Typescript", "React", "Material UI", "Redux"]
-      },
-
     ],
     blockChainProject: [
       {
@@ -93,7 +67,7 @@ export const Projects = () => {
   function CardRenders() {
     if (state == "frontend") {
       return (
-        reactProject.map(({ name, details, demo, code, tech }) => {
+        reactProject.map(({ name, details, demo, code, tech, img }) => {
           return (
             <>
               <Grid
@@ -110,23 +84,8 @@ export const Projects = () => {
                   <div className='flex justify-end items-center w-[100%]'>
                     <div className='flex space-x-3'>
 
-                      <Tooltip title="View Source Code" placement="top">
-                        <a href={code} target='_blank' rel='noreferrer'>
-                          <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            data-name='Layer 1'
-                            viewBox='0 0 24 24'
-                            width='28'
-                            height='28'
-                            id='github'
-                            className='mr-2 cursor-pointer'
-                            fill={iconColor}
-                          >
-                            <path d='M10.07031,20.50291a1.00008,1.00008,0,0,0-1.18115-.9834c-1.30908.24024-2.96191.27637-3.40137-.958a5.70754,5.70754,0,0,0-1.83691-2.415,1.20073,1.20073,0,0,1-.1665-.10938,1,1,0,0,0-.93067-.64551H2.54883a.99965.99965,0,0,0-1,.99512c-.00391.81543.811,1.33789,1.1416,1.51465a4.4408,4.4408,0,0,1,.92383,1.35937c.36426,1.02344,1.42285,2.57617,4.46582,2.376.001.03516.00195.06836.00244.09863l.00439.26758a1,1,0,0,0,2,0l-.00488-.31836C10.07715,21.4951,10.07031,21.22068,10.07031,20.50291Zm10.667-15.126c.03174-.125.063-.26367.09034-.41992a6.27792,6.27792,0,0,0-.40821-3.293,1.002,1.002,0,0,0-.61572-.58007c-.356-.12012-1.67041-.35645-4.18408,1.25a13.86918,13.86918,0,0,0-6.354,0C6.76221.751,5.45459.9658,5.10205,1.07908a.99744.99744,0,0,0-.63135.584,6.3003,6.3003,0,0,0-.40332,3.35644c.02442.12793.05078.2461.07813.35449A6.26928,6.26928,0,0,0,2.89014,9.20311a8.42168,8.42168,0,0,0,.04248.92187c.334,4.60254,3.334,5.98438,5.42431,6.459-.04345.125-.083.25878-.11816.40039a1.00023,1.00023,0,0,0,1.94238.47851,1.6784,1.6784,0,0,1,.46778-.87793.99947.99947,0,0,0-.5459-1.74512c-3.4541-.39453-4.95362-1.80175-5.1792-4.89843a6.61076,6.61076,0,0,1-.03369-.73828,4.25769,4.25769,0,0,1,.91943-2.71289,3.022,3.022,0,0,1,.1958-.23145.99988.99988,0,0,0,.188-1.02441,3.3876,3.3876,0,0,1-.15527-.55567A4.09356,4.09356,0,0,1,6.1167,3.06346a7.54263,7.54263,0,0,1,2.415,1.17968,1.00877,1.00877,0,0,0,.82764.13282,11.77716,11.77716,0,0,1,6.17285.001,1.00549,1.00549,0,0,0,.83056-.13769,7.572,7.572,0,0,1,2.40528-1.19043,4.03977,4.03977,0,0,1,.0874,1.57812,3.205,3.205,0,0,1-.16895.60743.9999.9999,0,0,0,.188,1.02441c.07715.08691.1543.18066.22363.26855A4.12186,4.12186,0,0,1,20,9.20311a7.03888,7.03888,0,0,1-.0376.77734c-.22021,3.05566-1.72558,4.46387-5.1958,4.85937a1,1,0,0,0-.54541,1.7461,1.63079,1.63079,0,0,1,.46631.9082,3.06079,3.06079,0,0,1,.09229.81934v2.334C14.77,21.2949,14.77,21.78025,14.77,22.00291a1,1,0,1,0,2,0c0-.2168,0-.69238.00977-1.33984V18.31346a4.8815,4.8815,0,0,0-.15479-1.31153,4.25638,4.25638,0,0,0-.11621-.416,6.51258,6.51258,0,0,0,5.44531-6.42383A8.69677,8.69677,0,0,0,22,9.20311,6.13062,6.13062,0,0,0,20.7373,5.37693Z'></path>
-                          </svg>
-                        </a>
-                      </Tooltip>
-                      <Tooltip title="View Live Demo" placement="top">
+
+                      <Tooltip title="Read Blog" placement="top">
                         <a href={demo} target='_blank' rel='noreferrer'>
                           <span
                             className={`material-symbols-outlined ${!isDarkMode ? 'text-black' : 'text-[#A7A7A7]'
@@ -138,11 +97,7 @@ export const Projects = () => {
                       </Tooltip>
                     </div>
                   </div>
-                  <h2
-                    className={`font-roboto text-2xl text-start font-bold ${textColor} mt-4`}
-                  >
-                    {name}
-                  </h2>
+                  <img src={img} />
                   <p
                     className={`${textColor} mt-2 ${!isDarkMode && 'opacity-60'
                       } text-base md:text-lg w-11/12 mb-4`}
@@ -153,10 +108,6 @@ export const Projects = () => {
                     {tech.map((tech) => (
                       <span
                         key={tech}
-                        // className={`font-menlo text-sm font-medium ${theme === 'light'
-                        //     ? 'text-black-6 bg-custom-grey'
-                        //     : 'text-white bg-custom-grey-5'
-                        //   } mt-2 rounded-full px-2 mr-2`}
                         className=" rounded px-2 mr-2 py-1  bg-[#ffffff52] shadow-md flex justify-center flex-col items-center font-menlo text-sm font-medium"
                       >
                         {tech}
@@ -330,10 +281,10 @@ export const Projects = () => {
   return (
     <>
       <div className="">
-        <div className="text-2xl my-5 font-semibold text-start">Open Source Projects 🚀</div>
+        <div className="text-2xl my-5 font-semibold text-start">Articles i wrote✍</div>
 
         <Box sx={{}}>
-          <div id="technologies" >
+          {/* <div id="technologies" >
             <div className="flex flex-row justify-center space-x-4 my-5">
               <Tooltip title="Click to viw React projects" placement="top">
                 <div className={` ${isDarkMode ? "text-white" : "text-black"} font-semibold  option ${state == 'frontend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("frontend")}>
@@ -345,11 +296,8 @@ export const Projects = () => {
                   Blockchain
                 </div>
               </Tooltip>
-              {/* <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'blockchain' && "active"} text-lg`} onClick={() => setstate("blockchain")}>
-                MERN Stack
-              </div> */}
             </div>
-          </div>
+          </div> */}
           <Grid
             container
             spacing={3}

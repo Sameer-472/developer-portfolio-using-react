@@ -68,10 +68,10 @@ const Skills = () => {
         "https://img.icons8.com/ios/50/null/express-js.png",
       name: "Express",
     },
-    {
-      image: "https://www.halo-lab.com/images/services/services-icons/aws.svg",
-      name: "AWS",
-    },
+    // {
+    //   image: "https://www.halo-lab.com/images/services/services-icons/aws.svg",
+    //   name: "AWS",
+    // },
   ];
 
   const blockChain = [
@@ -197,21 +197,21 @@ const Skills = () => {
   return (
     <>
       <div className="skills">
-        <div className="text-2xl my-5 font-semibold text-start">Tools and Technologies I know</div>
+        <div className="text-2xl my-5 font-semibold text-start">Tools and Technologies I know 💻</div>
         <Box
           sx={{ flexGrow: 1 }}
-          className="flex justify-start intro"
+          className="flex justify-center intro"
         // className="intro"
         >
           <div id="technologies" >
             <div className="flex flex-row justify-center space-x-4 my-5">
-              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'frontend' && "active"} text-lg`} onClick={() => setstate("frontend")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'frontend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("frontend")}>
                 Frontend
               </div>
-              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'backend' && "active"} text-lg`} onClick={() => setstate("backend")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'backend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("backend")}>
                 Backend
               </div>
-              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'blockchain' && "active"} text-lg`} onClick={() => setstate("blockchain")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'blockchain' ? "active" : "in-active"} text-sm`} onClick={() => setstate("blockchain")}>
                 Blockchain
               </div>
             </div>

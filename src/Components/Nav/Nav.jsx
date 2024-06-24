@@ -127,14 +127,17 @@ const Nav = (props) => {
     scroll.scrollTo(500)
   }
   const scrollToProject = () => {
-    scroll.scrollTo(1500)
+    scroll.scrollTo(1600)
   }
   const scrollToContact = () => {
     scroll.scrollTo(4000)
   }
-  // const scrollToSkill = ()=>{
-  //   scroll.scrollTo(500)
-  // }
+  const scrollToCarrers = () => {
+    scroll.scrollTo(900)
+  }
+  const scrollToBlogs = () => {
+    scroll.scrollTo(2300)
+  }
 
   useEffect(() => {
     Aos.init();
@@ -156,10 +159,11 @@ const Nav = (props) => {
               <Link className="font-semibold" to="/home"><li>Home</li></Link>
               <Link className="font-semibold" to="/project" onClick={scrollToProject} duration={50} smooth={false} > <li>Projects</li> </Link>
               <Link className="font-semibold" to="/skills" onClick={scrollToSkill} duration={50} smooth={false} > <li>Skills</li> </Link>
+              <Link className="font-semibold" to="/carrer" onClick={scrollToCarrers} duration={50} smooth={false} > <li>Career</li> </Link>
+              <Link className="font-semibold" to="/carrer" onClick={scrollToBlogs} duration={50} smooth={false} > <li>Blogs</li> </Link>
               <Link className="font-semibold" to="/contact" onClick={scrollToContact} duration={50} smooth={false} > <li>Contact Me</li> </Link>
-              <Link className="font-semibold" to="/carrer" onClick={scrollToContact} duration={50} smooth={false} > <li>Career</li> </Link>
             </div>
-            <MUISwitch onChange={toggleColor} />
+            <MUISwitch onChange={toggleColor} />  
           </ul>
         </nav>
       </Router>

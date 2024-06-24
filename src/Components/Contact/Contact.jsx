@@ -13,7 +13,7 @@ export const Contact = () => {
   return (
     <div>
       <Box>
-        <div className="text-2xl my-14 font-semibold">Reach out to Me !</div>
+        <div className="text-2xl my-14 font-semibold">Wants to Hire Me! 🙋‍♂️</div>
         <Grid
           container
           spacing={1}
@@ -27,12 +27,12 @@ export const Contact = () => {
           item
         >
           <Grid xs={10} md={8} order={{ xs: 3, md: 1 }} class="">
-            <p>WANT TO WORK WITH ME SAY HELLO MY DM ARE OPEN FOR EVERYONE</p>
-            <h2>Pakistani || Aspiring Software developer || Tech Guy</h2>
+            <div className="font-semibold">Say Hello My DMs are Open for Everyone</div>
+            <p className="font-semibold">Frontend Developer With crazy mind hanging out in the tech World</p>
             <p>
               <AddLocationAltIcon /> Karachi , Pakistan
             </p>
-            <h3>Open for work: Yes</h3>
+            {/* <h3>Open for work: Yes</h3> */}
             <div className="Icons">
               <a href="https://github.com/Sameer-472">
                 <GitHubIcon id="github" className="social-media-icons" />

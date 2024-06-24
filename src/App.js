@@ -5,14 +5,26 @@ import Skills from "./Components/Skills/Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Education } from "./Components/Education/Education";
 import { Projects } from "./Components/Projects/Projects";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Contact } from "./Components/Contact/Contact";
 import "./index.css";
 import { ThemeContext } from "./ThemeProvider";
 import { useContext } from "react";
 import { Experience } from "./Components/Experience/Experience";
+import AOS from "aos";
+import { Blogs } from "./Components/Blogs/Blogs";
+
 
 function App() {
+
+
+    useEffect(() => {
+        AOS.init({
+            duration: 500, // You can set global settings here
+            easing: 'ease-in-out-quart',
+            once: true, // Ensure animations happen only once
+        });
+    }, []);
     // this function will retrieve data from the nav dark toggle button and change the color 
     // const [state, setState] = useState(false);
     const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
@@ -21,16 +33,17 @@ function App() {
         setIsDarkMode(prop);
     };
 
-    
+
 
     return (
-        <div className={`${isDarkMode ? "darkMode" : "lightMode" } bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full px-24`}>
+        <div className={`${isDarkMode ? "darkMode" : "lightMode"} bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full px-24`}>
             <Router>
                 <Nav parent={callBackFunction} />
                 <Header />
                 <Skills />
-                <Experience/>
+                <Experience />
                 <Projects />
+                <Blogs/>
                 {/* <Education /> */}
                 <Contact />
                 <Switch>

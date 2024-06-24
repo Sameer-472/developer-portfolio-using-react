@@ -39,9 +39,8 @@ const Header = () => {
             <Grid item xs={10} md={5}>
               <div>
                 <div id="myInfo" className="mt-10">
-                  <div className="flex flex-row justify-center" id="name">Hi all i&apos;m<span className="text-[blueviolet] ml-2">{' '}Sameer</span></div>
-                  I am a Software developer from Pakistan
-                  doing Bachelor of Science in Information technology having an experience of building Web  applications with JavaScript / Reactjs / Material UI and some other cool libraries and frameworks🚀
+                  <div className="flex flex-row justify-center" id="name">Hi all i&apos;m Sameer</div>
+                  I am a Front end & web3 developer completed my graduation in Information technology & having expertise in various Front end technologies JavaScript / Reactjs / Typescript /Material UI / ShadeCn. I also worked with Ethereum , solidity , Ethers.js and knowledge of Dapps and some other cool libraries and frameworks🚀
                   <div className="Icons">
                     <a href="https://github.com/Sameer-472"><GitHubIcon id="github" className="social-media-icons" /></a>
                     <a href="https://www.instagram.com/skywalker_sameer/"> <InstagramIcon id="instagram" className="social-media-icons" /></a>
@@ -57,7 +56,7 @@ const Header = () => {
               </div>
             </Grid>
             <Grid item xs={5} md={5} className="flex justify-end items-center">
-                <img className="rounded-full w-[50%]" id="img" src="../../Images/profile.jpg" alt="profile" />
+              <img className="rounded-full w-[50%]" id="img" src="../../Images/profile.jpg" alt="profile" />
             </Grid>
           </Grid>
         </Box>
