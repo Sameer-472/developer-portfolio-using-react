@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Box from '@mui/material/Box';
 import "animate.css/animate.min.css";
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
@@ -12,8 +11,6 @@ import { useSwitch } from '@mui/core/SwitchUnstyled';
 import { animateScroll as scroll, Element } from 'react-scroll'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 

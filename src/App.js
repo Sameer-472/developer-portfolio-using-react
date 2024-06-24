@@ -3,9 +3,8 @@ import Nav from "./Components/Nav/Nav";
 import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Education } from "./Components/Education/Education";
 import { Projects } from "./Components/Projects/Projects";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Contact } from "./Components/Contact/Contact";
 import "./index.css";
 import { ThemeContext } from "./ThemeProvider";
@@ -44,7 +43,6 @@ function App() {
                 <Experience />
                 <Projects />
                 <Blogs/>
-                {/* <Education /> */}
                 <Contact />
                 <Switch>
                     <Route path="/home" exact element={<Header />} />

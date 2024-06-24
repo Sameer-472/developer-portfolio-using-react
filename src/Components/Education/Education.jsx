@@ -1,9 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Divider } from "@mui/material";
 import "./Education.css";
-import Aos from "aos";
 
 export const Education = () => {
   return (

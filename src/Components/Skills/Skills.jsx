@@ -1,7 +1,5 @@
 import React, { useContext, useState } from "react";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Aos from "aos";
 import "aos/dist/aos.css";
 import './Skills.css'
 import { ThemeContext } from "../../ThemeProvider";
@@ -96,10 +94,10 @@ const Skills = () => {
     // },
   ];
 
-  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
+  const { isDarkMode } = useContext(ThemeContext)
 
   function CardRenders() {
-    if (state == "frontend") {
+    if (state === "frontend") {
       return (
         <>
           {frontEnd.map((item) => {
@@ -133,7 +131,7 @@ const Skills = () => {
           ;
         </>
       );
-    } else if (state == "backend") {
+    } else if (state === "backend") {
       return (
         <>
           {backEnd.map((item) => {
@@ -205,13 +203,13 @@ const Skills = () => {
         >
           <div id="technologies" >
             <div className="flex flex-row justify-center space-x-4 my-5">
-              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'frontend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("frontend")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state === 'frontend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("frontend")}>
                 Frontend
               </div>
-              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'backend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("backend")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state === 'backend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("backend")}>
                 Backend
               </div>
-              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state == 'blockchain' ? "active" : "in-active"} text-sm`} onClick={() => setstate("blockchain")}>
+              <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state === 'blockchain' ? "active" : "in-active"} text-sm`} onClick={() => setstate("blockchain")}>
                 Blockchain
               </div>
             </div>

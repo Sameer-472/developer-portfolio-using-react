@@ -1,9 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Divider } from "@mui/material";
 import "./Experience.css";
-import Aos from "aos";
 import transviti from "../../Assets/companyLogos/transviti.jpeg"
 import softsyncDev from "../../Assets/companyLogos/softsyncdev.jpeg"
 import smit from "../../Assets/companyLogos/smit.jpeg"

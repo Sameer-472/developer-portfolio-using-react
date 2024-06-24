@@ -9,8 +9,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { animateScroll as scroll, Element } from 'react-scroll'
-import { Button } from "@mui/material";
+import { animateScroll as scroll } from 'react-scroll'
 import Resume from "../../Assets/Sameer Resume.pdf"
 
 
@@ -51,7 +50,7 @@ const Header = () => {
                   </div>
                   <div className="mt-10 space-x-4 flex flex-row justify-center">
                     <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" onClick={scrollToContact} duration={50} smooth={false} variant="contained">Contact Me</button>
-                    <a href={Resume} target="_blank">
+                    <a href={Resume} target="_blank" rel="noreferrer">
                       <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Resume</button>
                     </a>
                   </div>
