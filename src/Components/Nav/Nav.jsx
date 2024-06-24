@@ -99,7 +99,6 @@ function MUISwitch(props) {
       <SwitchInput {...getInputProps()} aria-label="Demo switch" />
     </SwitchRoot>
   );
-  console.log(stateClasses.checked);
 }
 
 const Nav = (props) => {
