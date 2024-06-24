@@ -9,11 +9,12 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { animateScroll as scroll , Element} from 'react-scroll'
+import { animateScroll as scroll, Element } from 'react-scroll'
+import { Button } from "@mui/material";
 
 
 const Header = () => {
-  const scrollToContact = ()=>{
+  const scrollToContact = () => {
     scroll.scrollTo(4000)
   }
   useEffect(() => {
@@ -22,27 +23,24 @@ const Header = () => {
   return (
     <>
       {/* <h1>aksjfhoqwi</h1> */}
-      <header>
+      <div className="mt-10">
         <Box sx={{ flexGrow: 1 }} class="flex" className="intro"
-                data-aos="fade-up"
-                data-aos-delay="0"
-                data-aos-easing="ease-in-out-quart"
-                data-aos-duration="1000">
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-easing="ease-in-out-quart"
+          data-aos-duration="1000">
           <Grid
             container
             spacing={1}
             // direction="column"
-            justifyContent="center"
+            justifyContent="space-evenly"
             alignItem="center"
-
           >
             <Grid item xs={10} md={5}>
               <div>
-                <div id="myInfo">
-                <h1 id="name">Hi all i'm Sameer <img id="hand" src="../../Images/hand.gif" alt="" /></h1>
-                  I am a web developer from Pakistan
-                  <img src="../../Images/flag.png" alt="" id="flag" /> 
-                   doing Bachelor of Science in Information technology having an experience of building Web  applications with JavaScript / Reactjs / Material UI and some other cool libraries and frameworks🚀
+                <div id="myInfo" className="mt-10">
+                  <div className="flex flex-row justify-center" id="name">Hi all i&apos;m Sameer</div>
+                  I am a Front end & web3 developer completed my graduation in Information technology & having expertise in various Front end technologies JavaScript / Reactjs / Typescript /Material UI / ShadeCn. I also worked with Ethereum , solidity , Ethers.js and knowledge of Dapps and some other cool libraries and frameworks🚀
                   <div className="Icons">
                     <a href="https://github.com/Sameer-472"><GitHubIcon id="github" className="social-media-icons" /></a>
                     <a href="https://www.instagram.com/skywalker_sameer/"> <InstagramIcon id="instagram" className="social-media-icons" /></a>
@@ -50,21 +48,19 @@ const Header = () => {
                     <a href="https://twitter.com/Sameerkhan_45"><TwitterIcon id="twitter" className="social-media-icons" /></a>
                     <a href="https://www.linkedin.com/in/muhammad-sameer-27ba2a172/"><LinkedInIcon id="linkedin" className="social-media-icons" /></a>
                   </div>
-                  <div className="btn">
-                    <button className="mybtn" onClick={scrollToContact} duration={50} smooth={false}>Contact Me</button>
-                   <a href=" https://drive.google.com/file/d/1dnKonHSbePTWtVMn77YFT7tipLn2Geio/view?usp=sharing"><button className="mybtn">My Resume</button></a>
+                  <div className="mt-10 space-x-4 flex flex-row justify-center">
+                    <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" onClick={scrollToContact} duration={50} smooth={false} variant="contained">Contact Me</button>
+                    <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Resume</button>
                   </div>
                 </div>
               </div>
             </Grid>
-            <Grid item xs={5} md={5} >
-              <div>
-                <img id="img" src="../../Images/example-scene-2.svg" alt="" />
-              </div>
+            <Grid item xs={5} md={5} className="flex justify-end items-center">
+              <img className="rounded-full w-[50%]" id="img" src="../../Images/profile.jpg" alt="profile" />
             </Grid>
           </Grid>
         </Box>
-      </header>
+      </div>
     </>
   );
 };

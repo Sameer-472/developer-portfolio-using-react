@@ -1,7 +1,58 @@
 .skills {
-    margin-top: -9vh;
+
 }
 
 .uniLogo {
     width: 80px;
+}
+
+#tCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #24323e;
+    color: white;
+    border-radius: 10px;
+    width: 18vw;
+    height: 25vh;
+}
+
+#selections div{
+    margin-top: 10px;
+}
+
+.option:hover{
+    cursor: pointer;
+}
+
+#technolgiesCards{
+    display: grid;
+    grid: row;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.active {
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: blueviolet;
+}
+.active:hover {
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(153, 64, 236);
+}
+
+.in-active{
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 5px;
 }

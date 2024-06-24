@@ -12,8 +12,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export const Contact = () => {
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }} class="flex" style={{marginTop: "-50px"}}>
-        <h1 className="reach-out">React out to Me!</h1>
+      <Box>
+        <div className="text-2xl my-14 font-semibold">Wants to Hire Me! 🙋‍♂️</div>
         <Grid
           container
           spacing={1}
@@ -26,13 +26,13 @@ export const Contact = () => {
           data-aos-duration="2000"
           item
         >
-          <Grid xs={10} md={8} order={{ xs: 3, md: 1 }} class="contact">
-            <p>WANT TO WORK WITH ME SAY HELLO MY DM ARE OPEN FOR EVERYONE</p>
-            <h2>Pakistani || Aspiring Software developer || Tech Guy</h2>
+          <Grid xs={10} md={8} order={{ xs: 3, md: 1 }} class="">
+            <div className="font-semibold">Say Hello My DMs are Open for Everyone</div>
+            <p className="font-semibold">Frontend Developer With crazy mind hanging out in the tech World</p>
             <p>
-              <AddLocationAltIcon /> Hyderabad , Pakistan
+              <AddLocationAltIcon /> Karachi , Pakistan
             </p>
-            <h3>Open for work: Yes</h3>
+            {/* <h3>Open for work: Yes</h3> */}
             <div className="Icons">
               <a href="https://github.com/Sameer-472">
                 <GitHubIcon id="github" className="social-media-icons" />
@@ -52,15 +52,15 @@ export const Contact = () => {
               </a>
             </div>
           </Grid>
-          <Grid xs={10} md={2} order={{ xs: 1, md: 1 }}>
+          {/* <Grid xs={10} md={2} order={{ xs: 1, md: 1 }}>
             <img src="../../Images/myprofile.jpeg" className="mydp" alt="" />
-          </Grid>
+          </Grid> */}
         </Grid>
-        <div className="footer">
-          <p>Made with my 💜</p>
-          <p>Developer Sameer</p>
-        </div>
       </Box>
+      <div className="text-center mt-12">
+        <p>Made with my 💜</p>
+        <p>Developer Sameer</p>
+      </div>
     </div>
   );
 };
