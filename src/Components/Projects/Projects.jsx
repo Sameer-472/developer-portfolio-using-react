@@ -64,8 +64,8 @@ export const Projects = () => {
       {
         name: "NFT Marketplace",
         details: "In this Marketplace you can create sell mint and resell NFTs",
-        demo: "https://etherblockchain.netlify.app/",
-        code: "https://github.com/Sameer-472/Web-3.0-blockchain-project",
+        demo: "https://63d61ce706bfdf15e7f082ef--ditalversefyp.netlify.app/",
+        code: "https://github.com/Sameer-472/DigitalVerse",
         tech: ["React", "Solidity", "Javascript", "Metamask", "Tailwind", "Solidity"]
       },
       {
@@ -75,12 +75,19 @@ export const Projects = () => {
         code: "https://github.com/Sameer-472/Web-3.0-blockchain-project",
         tech: ["Javascript", "React", "Ether.js", "Openzepline", "Hardhat", "Solidity"]
       },
+      // {
+      //   name: "MultiSender Dapp",
+      //   details: "The BNB multisender dapp project is a decentralized application built on the Binance Smart Chain (BSC) that enables users to send Binance Coin (BNB) and other BSC-based tokens to multiple addresses at once.",
+      //   demo: "https://etherblockchain.netlify.app/",
+      //   code: "https://github.com/Sameer-472/Web-3.0-blockchain-project",
+      //   tech: ["Javascript", "React", "Ether.js", "Binance Smart Chain", "Solidity", "Solidity"]
+      // },
       {
-        name: "MultiSender Dapp",
-        details: "The BNB multisender dapp project is a decentralized application built on the Binance Smart Chain (BSC) that enables users to send Binance Coin (BNB) and other BSC-based tokens to multiple addresses at once.",
-        demo: "https://etherblockchain.netlify.app/",
-        code: "https://github.com/Sameer-472/Web-3.0-blockchain-project",
-        tech: ["Javascript", "React", "Ether.js", "Binance Smart Chain", "Solidity", "Solidity"]
+        name: "Decentralize Exchanger",
+        details: "A simple clone of uniswap for swapping two tokens",
+        demo: "https://profound-bombolone-bc9b48.netlify.app/",
+        code: "https://github.com/Sameer-472/Decentralize-Exchanger",
+        tech: ["JavaScript", "React", "Ether.js", "Node.js", "Express" , "1inch Aggregator"]
       },
     ]
   };
