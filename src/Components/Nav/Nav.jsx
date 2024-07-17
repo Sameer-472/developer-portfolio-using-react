@@ -109,6 +109,22 @@ const Nav = (props) => {
   // this prop is sending the data to App.js file
   const [color, setcolor] = useState(true)
 
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   const toggleColor = () => {
     props.parent(color);
     setcolor(!color);
@@ -142,7 +158,7 @@ const Nav = (props) => {
   return (
     <>
       <Router>
-        <nav>
+        <nav className={visible ? "nav" : "hiddenNav"}>
           <div className="header">
             <img src="../../Images/signature.png" className="mobsignature" alt="" />
             <MenuIcon fontSize="large" id={btn ? "button" : "notbutton"} onClick={togglebtn} />
@@ -159,7 +175,7 @@ const Nav = (props) => {
               <Link className="font-semibold" to="/carrer" onClick={scrollToBlogs} duration={50} smooth={false} > <li>Blogs</li> </Link>
               <Link className="font-semibold" to="/contact" onClick={scrollToContact} duration={50} smooth={false} > <li>Contact Me</li> </Link>
             </div>
-            <MUISwitch onChange={toggleColor} />  
+            {/* <MUISwitch onChange={toggleColor} /> */}
           </ul>
         </nav>
       </Router>

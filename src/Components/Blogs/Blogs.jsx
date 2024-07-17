@@ -103,7 +103,7 @@ export const Blogs = () => {
   return (
     <>
       <div className="">
-        <div className="text-2xl my-5 font-semibold text-start">Articles i wrote✍</div>
+        <div className="text-2xl my-5 font-semibold text-center">Articles i wrote✍</div>
 
         <Box sx={{}}>
           {/* <div id="technologies" >

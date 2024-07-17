@@ -336,7 +336,7 @@ export const Projects = () => {
   return (
     <>
       <div className="">
-        <div className="text-2xl my-5 font-semibold text-start">Open Source Projects 🚀</div>
+        <div className="text-2xl my-5 font-semibold text-center">Open Source Projects 🚀</div>
 
         <Box sx={{}}>
           <div id="technologies" >

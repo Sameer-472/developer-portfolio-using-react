@@ -13,7 +13,7 @@ export const Contact = () => {
   return (
     <div>
       <Box>
-        <div className="text-2xl my-14 font-semibold">Wants to Hire Me! 🙋‍♂️</div>
+        <div className="text-2xl my-14 font-semibold text-center">Wants to Hire Me! 🙋‍♂️</div>
         <Grid
           container
           spacing={1}

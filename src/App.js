@@ -35,22 +35,26 @@ function App() {
 
 
     return (
-        <div className={`${isDarkMode ? "darkMode" : "lightMode"} bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full px-24`}>
-            <Router>
+        <>
+            <div className={`${isDarkMode ? "darkMode" : "lightMode"} bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full`}>
                 <Nav parent={callBackFunction} />
-                <Header />
-                <Skills />
-                <Experience />
-                <Projects />
-                <Blogs/>
-                <Contact />
-                <Switch>
-                    <Route path="/home" exact element={<Header />} />
-                    <Route path="/skills" element={<Skills />} />
-                    {/* <Route path="/" element={Nav} /> */}
-                </Switch>
-            </Router>
-        </div>
+                <div className="px-24">
+                    <Router>
+                        <Header />
+                        <Skills />
+                        <Experience />
+                        <Projects />
+                        <Blogs />
+                        <Contact />
+                        <Switch>
+                            <Route path="/home" exact element={<Header />} />
+                            <Route path="/skills" element={<Skills />} />
+                            {/* <Route path="/" element={Nav} /> */}
+                        </Switch>
+                    </Router>
+                </div>
+            </div>
+        </>
     );
 }
 

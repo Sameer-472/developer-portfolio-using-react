@@ -60,7 +60,7 @@ export const Experience = () => {
           >
 
             <Grid xs={10} md={12} >
-              <div className="text-2xl my-5 font-semibold text-start">My Work Experience 🔰</div>
+              <div className="text-2xl my-5 font-semibold text-center">My Work Experience 🔰</div>
               {experienceArr?.map(({ img, companyName, designation, endDate, startDate, techStack }, index) => (
                 <div key={index}>
                   <div className="flex justify-between items-center">
