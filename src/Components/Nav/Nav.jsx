@@ -6,7 +6,7 @@ import "animate.css/animate.min.css";
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 // import clsx from 'clsx';
-import { styled } from '@mui/system';
+// import { styled } from '@mui/system';
 // import { useSwitch } from '@mui/core/SwitchUnstyled';
 import { animateScroll as scroll, Element } from 'react-scroll'
 import {
