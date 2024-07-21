@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import './Skills.css'
 import { ThemeContext } from "../../ThemeProvider";
 import nextJs from "../../Assets/next.png"
+import Marquee from "react-fast-marquee";
 
 const Skills = () => {
   const [state, setstate] = useState("frontend");
@@ -103,7 +104,7 @@ const Skills = () => {
           {frontEnd.map((item) => {
             return (
               <>
-                <div className={`max-w-lg p-6 w-[180px] bg-[#ffffff52] rounded-lg shadow-md flex justify-center flex-col items-center`}
+                <div className={`p-6 w-[100%]  flex justify-center flex-row items-center`}
                   data-aos="fade-up"
                   data-aos-delay="0"
                   data-aos-easing="ease-in-out-quart"
@@ -120,7 +121,7 @@ const Skills = () => {
                   />
                   <div
 
-                    className="font-semibold"
+                    className="font-semibold text-nowrap ml-3"
                   >
                     {item.name}
                   </div>
@@ -137,7 +138,7 @@ const Skills = () => {
           {backEnd.map((item) => {
             return (
               <>
-                <div id="" className="max-w-lg p-6 w-[180px] bg-[#ffffff52] rounded-lg shadow flex justify-center flex-col items-center"
+                <div id="" className="p-6 w-[100%]  flex justify-center flex-row items-center"
                   data-aos="fade-up"
                   data-aos-delay="0"
                   data-aos-easing="ease-in-out-quart"
@@ -151,7 +152,7 @@ const Skills = () => {
                     data-aos-easing="ease-in-out-quart"
                     data-aos-duration="500"
                   />
-                  <div>
+                  <div className="font-semibold text-nowrap ml-3">
                     {item.name}
                   </div>
                 </div>
@@ -166,7 +167,7 @@ const Skills = () => {
           {blockChain.map((item) => {
             return (
               <>
-                <div className="max-w-lg p-6 w-[180px] bg-[#ffffff52] rounded-lg shadow-md flex justify-center flex-col items-center"
+                <div className="p-6 w-[100%]  flex justify-center flex-row items-center"
                   data-aos="fade-up"
                   data-aos-delay="0"
                   data-aos-easing="ease-in-out-quart"
@@ -180,7 +181,7 @@ const Skills = () => {
                     data-aos-easing="ease-in-out-quart"
                     data-aos-duration="500"
                   />
-                  <div>
+                  <div className="font-semibold text-nowrap ml-3">
                     {item.name}
                   </div>
                 </div>
@@ -194,15 +195,15 @@ const Skills = () => {
 
   return (
     <>
-      <div className="skills">
-        <div className="text-2xl my-5 font-semibold text-center">Tools and Technologies I know 💻</div>
+      <div className="skills mx-16">
+        <div className="text-2xl my-5 font-semibold text-start">Tools and Technologies I know 💻</div>
         <Box
           sx={{ flexGrow: 1 }}
-          className="flex justify-center intro"
+          className=""
         // className="intro"
         >
-          <div id="technologies" >
-            <div className="flex flex-row justify-center space-x-4 my-5">
+          <div id="" className="w-100">
+            <div className="flex flex-row justify-start space-x-4 my-5">
               <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state === 'frontend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("frontend")}>
                 Frontend
               </div>
@@ -213,8 +214,10 @@ const Skills = () => {
                 Blockchain
               </div>
             </div>
-            <div id="technolgiesCards">
-              <CardRenders />
+            <div className="">
+              <Marquee style={{flexDirection: "row"}}>
+                <CardRenders />
+              </Marquee>
             </div>
           </div>
         </Box>

@@ -23,8 +23,8 @@ const Header = () => {
   return (
     <>
       {/* <h1>aksjfhoqwi</h1> */}
-      <div className="mt-10">
-        <Box sx={{ flexGrow: 1 }} class="flex" className="intro"
+      <div className="page-header">
+        <Box sx={{ flexGrow: 1 }}  className="intro flex h-[550px]"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-easing="ease-in-out-quart"
@@ -36,22 +36,22 @@ const Header = () => {
             justifyContent="space-evenly"
             alignItem="center"
           >
-            <Grid item xs={10} md={5}>
+            <Grid item xs={10} md={5} alignItems={"center"} className="flex">
               <div>
-                <div id="myInfo" className="mt-10">
-                  <div className="flex flex-row justify-center" id="name">Hi all i&apos;m Sameer</div>
+                <div id="myInfo" className="mt-10 text-white">
+                  <div className="my-2" id="name">Hi all i&apos;m Sameer</div>
                   I am a Front end & web3 developer completed my graduation in Information technology & having expertise in various Front end technologies JavaScript / Reactjs / Typescript /Material UI / ShadeCn. I also worked with Ethereum , solidity , Ethers.js and knowledge of Dapps and some other cool libraries and frameworks🚀
-                  <div className="Icons">
+                  <div className="flex flex-row justify-start space-x-10 my-8" >
                     <a href="https://github.com/Sameer-472"><GitHubIcon id="github" className="social-media-icons" /></a>
                     <a href="https://www.instagram.com/skywalker_sameer/"> <InstagramIcon id="instagram" className="social-media-icons" /></a>
                     <a href="https://www.facebook.com/profile.php?id=100009529212122"><FacebookIcon id="facebook" className="social-media-icons" /></a>
                     <a href="https://twitter.com/Sameerkhan_45"><TwitterIcon id="twitter" className="social-media-icons" /></a>
                     <a href="https://www.linkedin.com/in/muhammad-sameer-27ba2a172/"><LinkedInIcon id="linkedin" className="social-media-icons" /></a>
                   </div>
-                  <div className="mt-10 space-x-4 flex flex-row justify-center">
-                    <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" onClick={scrollToContact} duration={50} smooth={false} variant="contained">Contact Me</button>
+                  <div className="mt-10 space-x-4 flex flex-row justify-start">
+                    <button type="button" class="focus:outline-none text-white bg-[#AD66DB] hover:bg-purple-800 focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 " onClick={scrollToContact} duration={50} smooth={false} variant="contained">Contact Me</button>
                     <a href={Resume} target="_blank" rel="noreferrer">
-                      <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Resume</button>
+                      <button type="button" class="focus:outline-none text-white bg-[#AD66DB] hover:bg-purple-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 ">Resume</button>
                     </a>
                   </div>
                 </div>

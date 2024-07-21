@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 * {
     margin: 0%;
@@ -17,8 +18,8 @@
 }
 
 .lightMode {
-    /* background-color: #fff; */
-    background-image: url("../public/Images/light-bg.png");
+    background-color: #ffff;
+    /* background-image: url("../public/Images/light-bg.png"); */
     /* background: ; */
     color: black;
 }
@@ -32,6 +33,10 @@
 }
 
 .darkMode a .social-media-icons {
+    color: white;
+}
+
+.social-media-icons {
     color: white;
 }
 

@@ -44,7 +44,7 @@ export const Experience = () => {
   ]
   return (
     <>
-      <div className="">
+      <div className="px-16">
         <Box sx={{ flexGrow: 1 }} class="flex">
           <Grid
             container

@@ -158,22 +158,22 @@ const Nav = (props) => {
   return (
     <>
       <Router>
-        <nav className={visible ? "nav" : "hiddenNav"}>
+        <nav className={true ? "nav" : "hiddenNav"}>
           <div className="header">
             <img src="../../Images/signature.png" className="mobsignature" alt="" />
             <MenuIcon fontSize="large" id={btn ? "button" : "notbutton"} onClick={togglebtn} />
             <ClearIcon fontSize="large" id={btn ? "cross" : "notcross"} onClick={togglebtn} />
           </div>
-          <ul className={`${state ? "desktopNav" : "mobileNav"} justify-evenly`}>
-            <img src="../../Images/signature.png" className="signature" alt="" />
+          <ul className={`${state ? "desktopNav" : "mobileNav"} justify-end`}>
+            {/* <img src="../../Images/signature.png" className="signature" alt="" /> */}
 
-            <div className="flex flex-row mt-3">
-              <Link className="font-semibold" to="/home"><li>Home</li></Link>
-              <Link className="font-semibold" to="/project" onClick={scrollToProject} duration={50} smooth={false} > <li>Projects</li> </Link>
-              <Link className="font-semibold" to="/skills" onClick={scrollToSkill} duration={50} smooth={false} > <li>Skills</li> </Link>
-              <Link className="font-semibold" to="/carrer" onClick={scrollToCarrers} duration={50} smooth={false} > <li>Career</li> </Link>
-              <Link className="font-semibold" to="/carrer" onClick={scrollToBlogs} duration={50} smooth={false} > <li>Blogs</li> </Link>
-              <Link className="font-semibold" to="/contact" onClick={scrollToContact} duration={50} smooth={false} > <li>Contact Me</li> </Link>
+            <div className="flex flex-row space-x-8">
+              <Link className="font-bold" to="/home"><li>Home</li></Link>
+              <Link className="font-bold" to="/project" onClick={scrollToProject} duration={50} smooth={false} > <li>Projects</li> </Link>
+              <Link className="font-bold" to="/skills" onClick={scrollToSkill} duration={50} smooth={false} > <li>Skills</li> </Link>
+              <Link className="font-bold" to="/carrer" onClick={scrollToCarrers} duration={50} smooth={false} > <li>Experience</li> </Link>
+              <Link className="font-bold" to="/carrer" onClick={scrollToBlogs} duration={50} smooth={false} > <li>My Blogs</li> </Link>
+              <Link className="font-bold" to="/contact" onClick={scrollToContact} duration={50} smooth={false} > <li>Contact Me</li> </Link>
             </div>
             {/* <MUISwitch onChange={toggleColor} /> */}
           </ul>

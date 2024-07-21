@@ -28,11 +28,11 @@
 }
 
 #technolgiesCards{
-    display: grid;
+    /* display: grid;
     grid: row;
     grid-template-columns: auto auto auto auto;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 15px; */
 }
 
 .active {
@@ -55,4 +55,8 @@
     border: 1px solid blueviolet;
     border-radius: 5px;
     padding: 5px;
+}
+
+.rfm-child{
+    display: flex;
 }

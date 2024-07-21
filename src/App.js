@@ -38,7 +38,7 @@ function App() {
         <>
             <div className={`${isDarkMode ? "darkMode" : "lightMode"} bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full`}>
                 <Nav parent={callBackFunction} />
-                <div className="px-24">
+                <div className="">
                     <Router>
                         <Header />
                         <Skills />
