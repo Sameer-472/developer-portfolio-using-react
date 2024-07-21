@@ -82,24 +82,24 @@ const SwitchTrack = styled('span')(
 `,
 );
 
-function MUISwitch(props) {
-  const { getInputProps, checked, disabled, focusVisible } = useSwitch(props);
+// function MUISwitch(props) {
+//   const { getInputProps, checked, disabled, focusVisible } = useSwitch(props);
 
-  const stateClasses = {
-    checked,
-    disabled,
-    focusVisible,
-  };
+//   const stateClasses = {
+//     checked,
+//     disabled,
+//     focusVisible,
+//   };
 
-  return (
-    <SwitchRoot className={clsx(stateClasses)}>
-      <SwitchTrack>
-        <SwitchThumb className={clsx(stateClasses)} />
-      </SwitchTrack>
-      <SwitchInput {...getInputProps()} aria-label="Demo switch" />
-    </SwitchRoot>
-  );
-}
+//   return (
+//     <SwitchRoot className={clsx(stateClasses)}>
+//       <SwitchTrack>
+//         <SwitchThumb className={clsx(stateClasses)} />
+//       </SwitchTrack>
+//       <SwitchInput {...getInputProps()} aria-label="Demo switch" />
+//     </SwitchRoot>
+//   );
+// }
 
 const Nav = (props) => {
   <Element name="Skills"></Element>
@@ -125,10 +125,10 @@ const Nav = (props) => {
   }, []);
 
 
-  const toggleColor = () => {
-    props.parent(color);
-    setcolor(!color);
-  }
+  // const toggleColor = () => {
+  //   props.parent(color);
+  //   setcolor(!color);
+  // }
 
   const togglebtn = () => {
     setState(!state);
