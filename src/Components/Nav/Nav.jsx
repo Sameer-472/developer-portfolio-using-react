@@ -1,4 +1,4 @@
-import React from "react";
+import React  , {useEffect} from "react";
 import "./Nav.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
