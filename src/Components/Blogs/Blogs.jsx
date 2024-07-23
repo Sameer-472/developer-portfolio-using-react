@@ -43,7 +43,7 @@ export const Blogs = () => {
   function CardRenders() {
     if (true) {
       return (
-        reactProject.map(({ name, details, demo, code, tech, img }) => {
+        reactProject.map(({  details, demo,  tech, img }) => {
           return (
             <>
               <Grid
@@ -102,8 +102,8 @@ export const Blogs = () => {
 
   return (
     <>
-      <div className="">
-        <div className="text-2xl my-5 font-semibold text-center">Articles i wrote✍</div>
+      <div className="px-16">
+        <div className="text-2xl my-5 font-semibold text-start">Articles i wrote✍</div>
 
         <Box sx={{}}>
           {/* <div id="technologies" >

@@ -183,8 +183,9 @@ export const Projects = () => {
             <>
               <Grid
                 item
-                xs={10}
-                md={5}
+                xs={12}
+                md={4}
+                sm={6}
                 data-aos="fade-up"
                 data-aos-delay="0"
                 data-aos-easing="ease"
@@ -335,12 +336,12 @@ export const Projects = () => {
 
   return (
     <>
-      <div className="">
-        <div className="text-2xl my-5 font-semibold text-center">Open Source Projects 🚀</div>
+      <div className="px-16">
+        <div className="text-2xl my-5 font-semibold text-start">Open Source Projects 🚀</div>
 
         <Box sx={{}}>
           <div id="technologies" >
-            <div className="flex flex-row justify-center space-x-4 my-5">
+            <div className="flex flex-row justify-start space-x-4 my-5">
               <Tooltip title="Click to viw React projects" placement="top">
                 <div className={` ${isDarkMode ? "text-white" : "text-black"} font-semibold  option ${state === 'frontend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("frontend")}>
                   React
@@ -358,6 +359,7 @@ export const Projects = () => {
           </div>
           <Grid
             container
+            gridTemplateColumns={"auto auto auto"}
             spacing={3}
             justifyContent="center"
             alignItems="center"

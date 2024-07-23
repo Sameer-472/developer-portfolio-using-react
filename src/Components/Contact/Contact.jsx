@@ -11,14 +11,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const Contact = () => {
   return (
-    <div>
+    <div className="px-16">
       <Box>
-        <div className="text-2xl my-14 font-semibold text-center">Wants to Hire Me! 🙋‍♂️</div>
+        <div className="text-2xl my-14 font-semibold text-start">Wants to Hire Me! 🙋‍♂️</div>
         <Grid
           container
           spacing={1}
           // direction="column"
-          justifyContent="center"
+          justifyContent="start"
           alignItem="center"
           data-aos="zoom-in-up"
           data-aos-delay="0"
