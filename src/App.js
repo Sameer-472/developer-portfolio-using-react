@@ -12,6 +12,8 @@ import { useContext } from "react";
 import { Experience } from "./Components/Experience/Experience";
 import AOS from "aos";
 import { Blogs } from "./Components/Blogs/Blogs";
+import PageNotFound from "./Components/PageNotFound";
+import LandingPage from "./Pages/LandingPage";
 
 
 function App() {
@@ -38,18 +40,18 @@ function App() {
         <>
             <div className={`${isDarkMode ? "darkMode" : "lightMode"} bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full`}>
                 <Nav parent={callBackFunction} />
-                <div className="">
+                <div>
                     <Router>
-                        <Header />
-                        <Skills />
-                        <Experience />
-                        <Projects />
-                        <Blogs />
-                        <Contact />
                         <Switch>
-                            <Route path="/home" exact element={<Header />} />
-                            <Route path="/skills" element={<Skills />} />
-                            {/* <Route path="/" element={Nav} /> */}
+                            <Route path="/" exact component={LandingPage} />
+                            <Route path="/home" exact component={LandingPage} />
+                            {/* <Route path="/skills" component={Skills} />
+                            <Route path="/experience" component={Experience} />
+                            <Route path="/projects" component={Projects} />
+                            <Route path="/blogs" component={Blogs} />
+                            <Route path="/contact" component={Contact} /> */}
+                            {/* 404 Route */}
+                            <Route path="*" component={PageNotFound} />
                         </Switch>
                     </Router>
                 </div>
