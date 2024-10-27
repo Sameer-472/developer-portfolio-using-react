@@ -18,10 +18,10 @@
 }
 
 .lightMode {
-    background-color: #ffff;
+    background-color: #030620;
     /* background-image: url("../public/Images/light-bg.png"); */
     /* background: ; */
-    color: black;
+    color: wheat;
 }
 
 .darkMode a {
@@ -29,7 +29,7 @@
 }
 
 .lightMode a {
-    color: black;
+    color: white;
 }
 
 .darkMode a .social-media-icons {

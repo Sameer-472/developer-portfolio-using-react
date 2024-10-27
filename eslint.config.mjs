@@ -1,40 +1,17 @@
-import reactPlugin from "eslint-plugin-react";
-import reactHooksPlugin from "eslint-plugin-react-hooks";
-import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
-import babelParser from "@babel/eslint-parser";
+import globals from "globals";
+import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
+import { fixupConfigRules } from "@eslint/compat";
 
 export default [
   {
-    files: ["**/*.{js,jsx,mjs}"],
+    files: ["**/*.{js,mjs,cjs,jsx}"],
     languageOptions: {
-      parser: babelParser,
-      parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
-        },
-        requireConfigFile: false,
-        babelOptions: {
-          presets: ["@babel/preset-react"],
-        },
-      },
-    },
-    plugins: {
-      react: reactPlugin,
-      "react-hooks": reactHooksPlugin,
-      "jsx-a11y": jsxA11yPlugin,
-    },
-    settings: {
-      react: {
-        version: "detect",
-      },
+      parserOptions: { ecmaFeatures: { jsx: true } },
+      globals: globals.browser,
     },
     rules: {
-      "no-unused-vars": "error",
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off",
-      "react/jsx-uses-vars": "error",
+      "no-unused-vars": ["error"],  // Error for unused variables
+      // ...fixupConfigRules(pluginReactConfig), // Spread inside the `rules` object
     },
-  },
+  }
 ];

@@ -1,7 +1,7 @@
 nav {
     position: sticky;
     top: 0;
-    background-color: #ffff;
+    background-color: #030620;
     z-index: 55;
     /* display: block; */
     width: 100%;
@@ -44,11 +44,11 @@ ul li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: wheat;
 }
 
 ul li:hover {
-    color: blueviolet;
+    color: #a3a2a2;
     border-radius: 10%;
     cursor: pointer;
 }

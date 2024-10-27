@@ -20,7 +20,8 @@ header {
 
 .page-header {
     background: rgb(41, 81, 184);
-    background: linear-gradient(90deg, rgba(41, 81, 184, 1) 35%, rgba(92, 81, 147, 1) 69%, rgba(177, 103, 222, 1) 100%);
+    /* background: linear-gradient(90deg, rgb(13 24 52) 35%, rgba(92, 81, 147, 1) 69%, rgba(177, 103, 222, 1) 100%); */
+    background: linear-gradient(90deg, rgb(13 24 52) 35%, rgb(48 38 99) 69%, rgb(63 39 78) 100%);
 }
 
 @media screen and (max-width:800px) {}

@@ -45,38 +45,26 @@ export const Experience = () => {
   return (
     <>
       <div className="px-16">
-        <Box sx={{ flexGrow: 1 }} class="flex">
-          <Grid
-            container
-            spacing={1}
-            // direction="column"
-            justifyContent=""
-            alignItem=""
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-easing="ease"
-            data-aos-duration="2000"
-            item
-          >
-
-            <Grid xs={10} md={12} >
-              <div className="text-2xl my-5 font-semibold text-start">My Work Experience 🔰</div>
-              {experienceArr?.map(({ img, companyName, designation, endDate, startDate, techStack }, index) => (
-                <div key={index}>
-                  <div className="flex justify-between items-center">
-                    <img className="uniLogo" src={img} alt="" />
-                    <h4>{startDate} - {endDate}</h4>
-                  </div>
-                  <div className="text-lg font-semibold">{companyName}</div>
-                  <h3>{designation}</h3>
-                  <p>Tech Stack: {techStack}</p>
-                  <div id="divider"></div>
+        <div className="text-2xl my-5 font-semibold text-start">My Work Experience 🔰</div>
+        <div id="divider"></div>
+        <div className="grid gap-3 md:grid-cols-2 grid-cols-1 w-100">
+          {experienceArr?.map(({ img, companyName, designation, endDate, startDate, techStack }, index) => (
+            <div data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-easing="ease"
+              data-aos-duration="2000" key={index} className="border-solid border-2 border-zinc-400 rounded-md w-100 p-5 hover:bg-[grey] transition">
+              <div className="w-100">
+                <div className="flex justify-between items-center">
+                  <img className="uniLogo" src={img} alt="" />
+                  <h4>{startDate} - {endDate}</h4>
                 </div>
-              ))}
-            </Grid>
-
-          </Grid>
-        </Box>
+                <div className="text-lg font-semibold">{companyName}</div>
+                <h3>{designation}</h3>
+                <p>Tech Stack: {techStack}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

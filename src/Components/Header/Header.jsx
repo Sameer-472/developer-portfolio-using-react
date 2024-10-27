@@ -10,7 +10,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { animateScroll as scroll } from 'react-scroll'
-import Resume from "../../Assets/Sameer Resume.pdf"
+import Resume from "../../Assets/Sameer Khan.resume.pdf"
 
 
 const Header = () => {
@@ -38,7 +38,7 @@ const Header = () => {
           >
             <Grid item xs={10} md={5} alignItems={"center"} className="flex">
               <div>
-                <div id="myInfo" className="mt-10 text-white">
+                <div id="myInfo" className="mt-10 text-[#D9D9D9">
                   <div className="my-2" id="name">Hi all i&apos;m Sameer</div>
                   I am a Front end & web3 developer completed my graduation in Information technology & having expertise in various Front end technologies JavaScript / Reactjs / Typescript /Material UI / ShadeCn. I also worked with Ethereum , solidity , Ethers.js and knowledge of Dapps and some other cool libraries and frameworks🚀
                   <div className="flex flex-row justify-start space-x-10 my-8" >
@@ -58,7 +58,7 @@ const Header = () => {
               </div>
             </Grid>
             <Grid item xs={5} md={5} className="flex justify-end items-center">
-              <img className="rounded-full w-[50%]" id="img" src="../../Images/profile.jpg" alt="profile" />
+              <img className="rounded-full md:block hidden w-[50%]" id="img" src="../../Images/profile.jpg" alt="profile" />
             </Grid>
           </Grid>
         </Box>

@@ -1,42 +1,30 @@
 import React from 'react'
 import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from '@mui/icons-material';
 
 const Footer = () => {
     return (
         <>
-            <div className='bg-[#5C5193] w-full mt-5'>
-                <div className='flex flex-wrap justify-center items-center relative'>
-                    <div className='mt-10'>
-                        <img className='w-[63%]' src='https://audrey-chen.my.canva.site/portfolio/videos/18a627afe7982b6e6fe43f19b02947ce.gif' />
+            <div className='w-full mt-20 flex flex-col justify-center bg-[#0D1834] text-white py-2'>
+                <div className='px-16'>
+                    <div className='font-semibold text-xl text-[#D9D9D9]'>Muhammad Sameer Khan</div>
+                    <div className="flex flex-row justify-start space-x-3 my-8" >
+                        <a href="https://github.com/Sameer-472"><GitHubIcon id="github" className="social-media-icons" /></a>
+                        <a href="https://www.instagram.com/skywalker_sameer/"> <InstagramIcon id="instagram" className="social-media-icons" /></a>
+                        <a href="https://www.facebook.com/profile.php?id=100009529212122"><FacebookIcon id="facebook" className="social-media-icons" /></a>
+                        <a href="https://twitter.com/Sameerkhan_45"><TwitterIcon id="twitter" className="social-media-icons" /></a>
+                        <a href="https://www.linkedin.com/in/muhammad-sameer-27ba2a172/"><LinkedInIcon id="linkedin" className="social-media-icons" /></a>
                     </div>
-
-                    <div className='w-1/3'>
-                        <div className=' flex flex-row w-[] text-white'>
-                            <img src="../../Images/profile.jpg" alt="profile" className='w-[30%]' />
-                            <div className='bg-black opacity-75 flex flex-col justify-center text-start  px-3'>
-                                <div className='text-start'>Sameer - overview</div>
-                                <div>here to innovate: Sameer khan has 67 repo available. Follow thier code in github..</div>
-                                <a href="https://github.com/Sameer-472"><GitHubIcon id="github" className="social-media-icons" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='w-fit '>
-                        <div className=' flex flex-row w-[] text-white'>
-                            <div className='flex flex-col justify-center text-start px-3 bg-[mediumpurple] opacity-[94%] absolute right-[50px] top-[55%] h-[18%] w-[21%]'>
-                                <div className='text-start text-2xl'>Lets Connect!!<Link /></div>
-                                <div className='text-xl'>+923163136464</div>
-                                <div className='text-xl'>muhammadsameer2016@yahoo.com</div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
-            <div className='w-full flex justify-center bg-gray-900 text-white py-2'>
-                <p>Made with my 💜</p>
-                <p>Developer Sameer</p>
+            <div className='mt-5 text-[15px]  px-16 w-full grid grid-cols-1 md:grid-cols-3 h-[60px]'>
+                <div className='md:text-start text-center'>@2024 skywalkersameer. All right reserved.</div>
+                <div className='text-center'>{`</> with 💜 by Sameer`}</div>
+                <div className='md:text-end text-center'>v.2.0</div>
             </div>
         </>
     )

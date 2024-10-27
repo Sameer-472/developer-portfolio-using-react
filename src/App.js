@@ -44,7 +44,7 @@ function App() {
                     <Router>
                         <Switch>
                             <Route path="/" exact component={LandingPage} />
-                            <Route path="/home" exact component={LandingPage} />
+                            {/* <Route path="/home" component={LandingPage} /> */}
                             {/* <Route path="/skills" component={Skills} />
                             <Route path="/experience" component={Experience} />
                             <Route path="/projects" component={Projects} />

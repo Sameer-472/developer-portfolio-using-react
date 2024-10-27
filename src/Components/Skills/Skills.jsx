@@ -71,6 +71,21 @@ const Skills = () => {
     //   image: "https://www.halo-lab.com/images/services/services-icons/aws.svg",
     //   name: "AWS",
     // },
+    {
+      image:
+        "https://img.icons8.com/color/48/null/solidity.png",
+      name: "Solidity",
+    },
+    {
+      image:
+        "https://63fc7c9577441906b1298d03--skywalkersameer.netlify.app/Images/hardhat.svg",
+      name: "Hardhat",
+    },
+    {
+      image:
+        "https://docs.ethers.org/v5/static/logo.svg",
+      name: "Ether.js",
+    },
   ];
 
   const blockChain = [
@@ -97,113 +112,91 @@ const Skills = () => {
 
   const { isDarkMode } = useContext(ThemeContext)
 
-  function CardRenders() {
-    if (state === "frontend") {
-      return (
-        <>
-          {frontEnd.map((item) => {
-            return (
-              <>
-                <div className={`p-6 w-[100%]  flex justify-center flex-row items-center`}
-                  data-aos="fade-up"
-                  data-aos-delay="0"
-                  data-aos-easing="ease-in-out-quart"
-                  data-aos-duration="500"
-                >
-                  <img
-                    src={item.image}
-                    width={60}
-                    alt=""
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-easing="ease-in-out-quart"
-                    data-aos-duration="500"
-                  />
-                  <div
+  // function CardRenders() {
+  //   if (state === "frontend") {
+  //     return (
+  //       <>
+  //         {frontEnd.map((item) => {
+  //           return (
+  //             <>
+  //               <div className={`p-6 w-[100%]  flex justify-center flex-row items-center`}
+  //                 data-aos="fade-up"
+  //                 data-aos-delay="0"
+  //                 data-aos-easing="ease-in-out-quart"
+  //                 data-aos-duration="500"
+  //               >
+  //                 <img
+  //                   src={item.image}
+  //                   width={60}
+  //                   alt=""
+  //                   data-aos="fade-up"
+  //                   data-aos-delay="0"
+  //                   data-aos-easing="ease-in-out-quart"
+  //                   data-aos-duration="500"
+  //                 />
+  //                 <div
 
-                    className="font-semibold text-nowrap ml-3"
-                  >
-                    {item.name}
-                  </div>
-                </div>
-              </>
-            );
-          })}
-          ;
-        </>
-      );
-    } else if (state === "backend") {
-      return (
-        <>
-          {backEnd.map((item) => {
-            return (
-              <>
-                <div id="" className="p-6 w-[100%]  flex justify-center flex-row items-center"
-                  data-aos="fade-up"
-                  data-aos-delay="0"
-                  data-aos-easing="ease-in-out-quart"
-                  data-aos-duration="500">
-                  <img
-                    src={item.image}
-                    width={60}
-                    alt=""
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-easing="ease-in-out-quart"
-                    data-aos-duration="500"
-                  />
-                  <div className="font-semibold text-nowrap ml-3">
-                    {item.name}
-                  </div>
-                </div>
-              </>
-            );
-          })}
-        </>
-      );
-    } else {
-      return (
-        <>
-          {blockChain.map((item) => {
-            return (
-              <>
-                <div className="p-6 w-[100%]  flex justify-center flex-row items-center"
-                  data-aos="fade-up"
-                  data-aos-delay="0"
-                  data-aos-easing="ease-in-out-quart"
-                  data-aos-duration="500">
-                  <img
-                    src={item.image}
-                    width={60}
-                    alt=""
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-easing="ease-in-out-quart"
-                    data-aos-duration="500"
-                  />
-                  <div className="font-semibold text-nowrap ml-3">
-                    {item.name}
-                  </div>
-                </div>
-              </>
-            );
-          })}
-        </>
-      );
-    }
-  }
+  //                   className="font-semibold text-nowrap ml-3"
+  //                 >
+  //                   {item.name}
+  //                 </div>
+  //               </div>
+  //             </>
+  //           );
+  //         })}
+  //         ;
+  //       </>
+  //     );
+  //   } else if (state === "backend") {
+  //     return (
+  //       <>
+  //         {backEnd.map((item) => {
+  //           return (
+  //             <>
+  //               <div id="" className="p-6 w-[100%]  flex justify-center flex-row items-center"
+  //                 data-aos="fade-up"
+  //                 data-aos-delay="0"
+  //                 data-aos-easing="ease-in-out-quart"
+  //                 data-aos-duration="500">
+  //                 <img
+  //                   src={item.image}
+  //                   width={60}
+  //                   alt=""
+  //                   data-aos="fade-up"
+  //                   data-aos-delay="0"
+  //                   data-aos-easing="ease-in-out-quart"
+  //                   data-aos-duration="500"
+  //                 />
+  //                 <div className="font-semibold text-nowrap ml-3">
+  //                   {item.name}
+  //                 </div>
+  //               </div>
+  //             </>
+  //           );
+  //         })}
+  //       </>
+  //     );
+  //   } else {
+  //     return (
+  //       <>
+
+  //       </>
+  //     );
+  //   }
+  // }
 
   return (
     <>
-      <div className="skills mx-16">
+      <div className="skills mx-16 my-10">
         <div className="text-2xl my-5 font-semibold text-start">Tools and Technologies I know 💻</div>
+        <div id="divider"></div>
         <Box
           sx={{ flexGrow: 1 }}
           className=""
         // className="intro"
         >
           <div id="" className="w-100">
-            <div className="flex flex-row justify-start space-x-4 my-5">
+            {/* <div className="flex flex-row justify-start space-x-4 my-5">
               <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state === 'frontend' ? "active" : "in-active"} text-sm`} onClick={() => setstate("frontend")}>
                 Frontend
               </div>
@@ -213,11 +206,90 @@ const Skills = () => {
               <div className={`${isDarkMode ? "text-white" : "text-black"} font-semibold option ${state === 'blockchain' ? "active" : "in-active"} text-sm`} onClick={() => setstate("blockchain")}>
                 Blockchain
               </div>
-            </div>
+            </div> */}
             <div className="">
-              <Marquee style={{flexDirection: "row"}}>
-                <CardRenders />
+              <Marquee direction="right" style={{ flexDirection: "row" }}>
+                {frontEnd.map((item) => {
+                  return (
+                    <>
+                      <div className={`p-6 w-[100%]  flex justify-center flex-row items-center`}
+                        data-aos="fade-up"
+                        data-aos-delay="0"
+                        data-aos-easing="ease-in-out-quart"
+                        data-aos-duration="500"
+                      >
+                        <img
+                          src={item.image}
+                          width={60}
+                          alt=""
+                          data-aos="fade-up"
+                          data-aos-delay="0"
+                          data-aos-easing="ease-in-out-quart"
+                          data-aos-duration="500"
+                        />
+                        <div
+
+                          className="font-semibold text-nowrap ml-3"
+                        >
+                          {item.name}
+                        </div>
+                      </div>
+                    </>
+                  );
+                })}
               </Marquee>
+              <Marquee style={{ flexDirection: "row" }}>
+                {backEnd.map((item) => {
+                  return (
+                    <>
+                      <div id="" className="p-6 w-[100%]  flex justify-center flex-row items-center"
+                        data-aos="fade-up"
+                        data-aos-delay="0"
+                        data-aos-easing="ease-in-out-quart"
+                        data-aos-duration="500">
+                        <img
+                          src={item.image}
+                          width={60}
+                          alt=""
+                          data-aos="fade-up"
+                          data-aos-delay="0"
+                          data-aos-easing="ease-in-out-quart"
+                          data-aos-duration="500"
+                        />
+                        <div className="font-semibold text-nowrap ml-3">
+                          {item.name}
+                        </div>
+                      </div>
+                    </>
+                  );
+                })}
+              </Marquee>
+              {/* <Marquee direction="right" style={{ flexDirection: "row" }}>
+                {blockChain.map((item) => {
+                  return (
+                    <>
+                      <div className="p-6 w-[100%]  flex justify-center flex-row items-center"
+                        data-aos="fade-up"
+                        data-aos-delay="0"
+                        data-aos-easing="ease-in-out-quart"
+                        data-aos-duration="500">
+                        <img
+                          src={item.image}
+                          width={60}
+                          alt=""
+                          data-aos="fade-up"
+                          data-aos-delay="0"
+                          data-aos-easing="ease-in-out-quart"
+                          data-aos-duration="500"
+                        />
+                        <div className="font-semibold text-nowrap ml-3">
+                          {item.name}
+                        </div>
+                      </div>
+                    </>
+                  );
+                })}
+              </Marquee> */}
             </div>
           </div>
         </Box>
