@@ -22,24 +22,24 @@ export const Experience = () => {
       designation: "Front end developer and Blockchain Developer",
       img: softsyncDev,
       techStack: "React , Solidity , Remix , Hardhat , Openzeppline  , Javascript ",
-      startDate: "May 2023",
-      endDate: "July 2023"
+      startDate: "Jun 2022",
+      endDate: "August 2023"
     },
     {
       companyName: "SMIT",
       designation: "MERN Stack Trainer",
       img: smit,
       techStack: "Javascript , HTML5 , CSS3 , Github",
-      startDate: "February 2023",
-      endDate: "May 2023"
+      startDate: "February 2022",
+      endDate: "May 2022"
     },
     {
       companyName: "Ghani Business Solutions",
       designation: "Blockchain Developer Intern",
       img: gbs,
       techStack: "Solidity , Hardhat , truffle , Openzeppline , Remix and React",
-      startDate: "Dec 2022",
-      endDate: "March 2023"
+      startDate: "Sept 2021",
+      endDate: "Feb 2022"
     },
   ]
   return (

@@ -10,7 +10,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { animateScroll as scroll } from 'react-scroll'
-import Resume from "../../Assets/Sameer Khan.resume.pdf"
+import Resume from "../../Assets/Sameer Khan.resume_1.pdf"
 
 
 const Header = () => {
