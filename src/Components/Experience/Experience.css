@@ -14,3 +14,30 @@
 .uniLogo {
     width: 50px;
 }
+
+
+.job-description {
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 0px 0px 4px 4px;
+    color: white;
+    /* display: none; */
+    opacity: 0;
+    left: 0;
+    /* Initially invisible */
+    transform: translateY(10px);
+    padding: 15px 5px;
+    /* Start slightly off position */
+    transition: opacity 0.6s ease-in-out, transform 0.3s ease-in-out;
+    /* Animate opacity and position */
+}
+
+.job-card:hover .job-description {
+    opacity: 0.9;
+    /* Make it visible */
+    transform: translateY(0);
+    /* Show the description on hover */
+}
