@@ -50,7 +50,6 @@ const Nav = () => {
 
   return (
     <>
-      <Router>
         <nav className={true ? "nav" : "hiddenNav"}>
           <div className="header">
             <img src="../../Images/signature.png" className="mobsignature" alt="" />
@@ -62,16 +61,15 @@ const Nav = () => {
 
             <div className="flex flex-row space-x-8">
               <Link className="font-bold text-[#fffffff3]" to="/" onClick={scrollToHome} duration={50} smooth={false}><li>Home</li></Link>
-              <Link className="font-bold" to="/project" onClick={scrollToProject} duration={50} smooth={false} > <li>Projects</li> </Link>
-              <Link className="font-bold" to="/skills" onClick={scrollToSkill} duration={50} smooth={false} > <li>Skills</li> </Link>
-              <Link className="font-bold" to="/carrer" onClick={scrollToCarrers} duration={50} smooth={false} > <li>Experience</li> </Link>
-              <Link className="font-bold" to="/carrer" onClick={scrollToBlogs} duration={50} smooth={false} > <li>My Blogs</li> </Link>
-              <Link className="font-bold" to="/contact" onClick={scrollToContact} duration={50} smooth={false} > <li>Contact Me</li> </Link>
+              <Link className="font-bold" to="#" onClick={scrollToProject} duration={50} smooth={false} > <li>Projects</li> </Link>
+              <Link className="font-bold" to="#" onClick={scrollToSkill} duration={50} smooth={false} > <li>Skills</li> </Link>
+              <Link className="font-bold" to="#" onClick={scrollToCarrers} duration={50} smooth={false} > <li>Experience</li> </Link>
+              <Link className="font-bold" to="/blogs" onClick={scrollToBlogs} duration={50} smooth={false} > <li>My Blogs</li> </Link>
+              <Link className="font-bold" to="#" onClick={scrollToContact} duration={50} smooth={false} > <li>Contact Me</li> </Link>
             </div>
             {/* <MUISwitch onChange={toggleColor} /> */}
           </ul>
         </nav>
-      </Router>
     </>
   );
 };

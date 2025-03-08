@@ -14,6 +14,7 @@ import AOS from "aos";
 import { Blogs } from "./Components/Blogs/Blogs";
 import PageNotFound from "./Components/PageNotFound";
 import LandingPage from "./Pages/LandingPage";
+import { BlogsPage } from "./Pages/BlogsPage";
 
 
 function App() {
@@ -39,11 +40,12 @@ function App() {
     return (
         <>
             <div className={`${isDarkMode ? "darkMode" : "lightMode"} bg-fixed bg-cover bg-no-repeat min-h-screen min-w-full`}>
-                <Nav parent={callBackFunction} />
                 <div>
                     <Router>
+                        <Nav parent={callBackFunction} />
                         <Switch>
-                            <Route path="/" exact component={LandingPage} />
+                            <Route exact path="/" component={LandingPage} />
+                            <Route path="/blogs" component={BlogsPage} />
                             {/* <Route path="/home" component={LandingPage} /> */}
                             {/* <Route path="/skills" component={Skills} />
                             <Route path="/experience" component={Experience} />
