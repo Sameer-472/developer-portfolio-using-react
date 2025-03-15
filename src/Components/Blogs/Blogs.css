@@ -1,0 +1,38 @@
+.Project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 200px; */
+    margin: 10vh 0 200px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .Project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.projectCard:hover {
+    box-shadow: 5px 10px 20px whitesmoke;
+    border: 3px solid blueviolet;
+}
+
+.projectButton {
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    border-style: none;
+    border-radius: 10%;
+    transition: all linear 0.3s;
+    color: white;
+}
+
+.projectButton:hover {
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}

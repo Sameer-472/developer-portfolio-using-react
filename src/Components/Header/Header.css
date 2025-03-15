@@ -3,17 +3,25 @@ header {
 }
 
 #name {
-    padding: 0 20px 0 20px;
+    /* padding: 0 20px 0 20px; */
     font-size: 2rem;
     font-weight: bolder;
-    margin: 30px 0 30px 0;
+    /* margin: 30px 0 30px 0; */
+    line-height: 30px;
     font-weight: bolder;
+    text-align: start;
 }
 
 #img {
     /* background-color: aquamarine; */
     /* width: 500px; */
     margin-top: -2.7%;
+}
+
+.page-header {
+    background: rgb(41, 81, 184);
+    /* background: linear-gradient(90deg, rgb(13 24 52) 35%, rgba(92, 81, 147, 1) 69%, rgba(177, 103, 222, 1) 100%); */
+    background: linear-gradient(90deg, rgb(13 24 52) 35%, rgb(48 38 99) 69%, rgb(63 39 78) 100%);
 }
 
 @media screen and (max-width:800px) {}
@@ -24,11 +32,9 @@ header {
 }
 
 #myInfo {
-    text-align: center;
-    /* margin: 40px 40px 0 40px; */
-    /* padding: 0 20px 30px 10px; */
     line-height: 30px;
     font-weight: 700;
+    text-align: start;
 }
 
 #flag {

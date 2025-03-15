@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 * {
     margin: 0%;
     font-family: 'Raleway', sans-serif;
@@ -6,13 +12,16 @@
 }
 
 .darkMode {
-    background-color: #171c28;
+    /* background-color: #171c28; */
+    background-image: url("../public/Images/dark-bg.png");
     color: white;
 }
 
 .lightMode {
-    background-color: #fff;
-    color: black;
+    background-color: #030620;
+    /* background-image: url("../public/Images/light-bg.png"); */
+    /* background: ; */
+    color: wheat;
 }
 
 .darkMode a {
@@ -20,10 +29,14 @@
 }
 
 .lightMode a {
-    color: black;
+    color: white;
 }
 
 .darkMode a .social-media-icons {
+    color: white;
+}
+
+.social-media-icons {
     color: white;
 }
 
